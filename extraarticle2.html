@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>The Rome Report</title>
+</head>
+<body>
+
+  <header>
+    <h1>The Rome Report</h1>
+    <nav>
+      <ul>
+        <li><a href="#home"onclick="navigateToPage('index.html')">Home</a></li>
+        <li><a href="#articles"onclick="navigateToPage('articles.html')">Articles</a></li>
+        <li><a href="#aboutus"onclick="navigateToPage('aboutus.html')">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="featured">
+      <article>
+        <h2>Extra Article 2</h2>
+    
+      </article>
+    
+  </main>
+
+  <footer>
+    <p>&copy; 44 B.C. The Roman Report. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function navigateToPage(page) {
+      window.location.href = page;
+    }
+  </script>
+
+
+</body>
+</html>
