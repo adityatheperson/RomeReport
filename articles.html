@@ -3,8 +3,70 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
   <title>The Rome Report</title>
+  <style>
+    nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+section article {
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+    header {
+    background-color: #fd3d3d;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    }
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .article-card {
+        width: 30%;
+        margin: 15px;
+        padding: 15px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+        color: #333;
+    }
+    p {
+        color: #555;
+    }
+</style>
 </head>
 <body>
 
@@ -20,9 +82,30 @@
   </header>
 
   <main>
-    <section id="featured">
+    <div class="article-card">
+        <h2>Main Article</h2>
+        <p>Main Article with main story and stuff</p>
+        <a href="#"onclick="navigateToPage('mainarticle.html')">Read more</a>
+    </div>
 
-  </main>
+    <div class="article-card">
+        <h2>Extra Article 1</h2>
+        <p>Yes</p>
+        <a href="#"onclick="navigateToPage('extraarticle1.html')">Read more</a>
+    </div>
+
+    <div class="article-card">
+        <h2>Extra Article 2</h2>
+        <p>Maybe</p>
+        <a href="#"onclick="navigateToPage('extraarticle2.html')">Read more</a>
+    </div>
+
+    <div class="article-card">
+        <h2>Extra Article 3</h2>
+        <p>No</p>
+        <a href="#"onclick="navigateToPage('extraarticle3.html')">Read more</a>
+    </div>
+</main>
 
   <footer>
     <p>&copy; 44 B.C. The Roman Report. All rights reserved.</p>
