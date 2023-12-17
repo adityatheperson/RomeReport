@@ -37,15 +37,54 @@
     <!-- Add more article cards as needed -->
 
 </main>
+<div id="popupOverlay1">
+  <div id="popupContent1">
+    <p>1</p>
+    <p id="closeBtn" onclick="closePopup(1)">Close</p>
+  </div>
+</div>
+<div id="popupOverlay2">
+  <div id="popupContent2">
+    <p>2</p>
+    <p id="closeBtn" onclick="closePopup(2)">Close</p>
+  </div>
+</div>
+  <div id="popupOverlay3">
+    <div id="popupContent3">
+      <p>3</p>
+      <p id="closeBtn" onclick="closePopup(3)">Close</p>
+    </div>
+  </div>
+
 
   <footer>
     <p>&copy; 44 B.C. The Roman Report. All rights reserved.</p>
   </footer>
 
   <script>
-    function navigateToPage(page) {
-      window.location.href = page;
-    }
+    setInterval(openPopup, 5000);
+
+  function openPopup() {
+    var randomNum = Math.floor(Math.random() * 3) + 1;
+    console.log(randomNum)
+    if (randomNum === 1) {
+        document.getElementById('popupOverlay1').style.display = 'flex';
+  }
+  if (randomNum === 2) {
+        document.getElementById('popupOverlay2').style.display = 'flex';
+  }
+  if (randomNum === 3) {
+        document.getElementById('popupOverlay3').style.display = 'flex';
+  }
+}
+
+  function closePopup(num) {
+    document.getElementById('popupOverlay'+num).style.display = 'none';
+  }
+
+  function navigateToPage(page) {
+    window.location.href = page;
+}
   </script>
 
 
