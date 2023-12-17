@@ -52,6 +52,11 @@ img {
   height: auto;
   margin-bottom: 10px;
 }
+#ad{
+  max-width: 25%;
+  height: auto;
+  margin-bottom: 10px;
+}
 
 footer {
   background-color: #333;
