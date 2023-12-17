@@ -49,7 +49,6 @@ section article {
 }
 img {
   display: block;
-  width: 60%;
   margin: auto;
 }
 #ad{
@@ -123,4 +122,21 @@ footer {
   cursor: pointer;
   color: #555;
   margin-top: 10px;
+}
+.main-article {
+  padding: 20px;
+  background-color: #e0e0e0;
+  margin: 20px;
+}
+.small-articles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0 20px;
+}
+.small-article {
+  width: 42%;
+  margin: 20px;
+  background-color: #f0f0f0;
+  padding: 10px;
 }
