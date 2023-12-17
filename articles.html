@@ -24,7 +24,7 @@ footer {
   color: #fff;
   text-align: center;
   padding: 1em;
-  position: fixed;
+  position: relative;
   bottom: 0;
   width: 100%;
 }
@@ -130,7 +130,7 @@ nav a {
 }
 </style>
 </head>
-<body>
+<body oncopy="return false" oncut="return false" onpaste="return false">
 
   <header>
     <h1>The Rome Report</h1>
@@ -152,8 +152,10 @@ nav a {
     </div>
 
     <div class="article-card">
-        <h2>Extra Article 1</h2>
-        <p>Yes</p>
+        <h2>Rome's Foreign Diplomacy: A Testament to Our Republic's Grandeur</h2>
+        <img src="C&C.png" alt="C&C">
+        <p>Under Julius Caesar's leadership, the Republic's foreign diplomacy is marked by strategic alliances, notably with Egypt, enhancing Rome's influence and access to crucial resources. The recent conquest of Gaul further elevates Rome's military prestige, showcasing its power and diplomatic acumen on the world stage.</p>
+        
         <a href="#"onclick="navigateToPage('extraarticle1.html')">Read more</a>
     </div>
 

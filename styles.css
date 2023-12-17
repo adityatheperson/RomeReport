@@ -48,9 +48,9 @@ section article {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 10px;
+  display: block;
+  width: 60%;
+  margin: auto;
 }
 #ad{
   max-width: 25%;
@@ -63,7 +63,7 @@ footer {
   color: #fff;
   text-align: center;
   padding: 1em;
-  position: fixed;
+  position:relative;
   bottom: 0;
   width: 100%;
 }
